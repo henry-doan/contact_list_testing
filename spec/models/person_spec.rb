@@ -2,6 +2,14 @@ require 'rails_helper'
 
 RSpec.describe Person, type: :model do
 
+	describe 'attributes' do
+		it  { should respond_to :email}
+		it  { should respond_to :first_name}
+		it  { should respond_to :last_name}
+		it  { should respond_to :age}
+		it  { should respond_to :phone}
+		it  { should respond_to :items}
+	end
 
 	describe 'instance methods' do
 		before(:each) do
